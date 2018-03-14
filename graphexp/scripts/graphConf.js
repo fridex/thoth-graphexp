@@ -1,6 +1,6 @@
 
 // configuration for the graph database access
-const HOST = "localhost"
+const HOST = "<THOTH_JANUSGRAPH_HOST>"
 const PORT = "8182"
 
 // for implementations like Neptune where only single commands are allowed per request
