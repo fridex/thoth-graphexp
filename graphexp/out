@@ -1,0 +1,28 @@
+diff --git a/scripts/graphConf.js b/scripts/graphConf.js
+index f480fb9..0c42a0d 100644
+--- a/scripts/graphConf.js
++++ b/scripts/graphConf.js
+@@ -1,7 +1,10 @@
+ 
+ // configuration for the graph database access
+-const HOST = "localhost"
+-const PORT = "8182"
++//const HOST = "localhost"
++//const PORT = "8182"
++//const HOST = "thoth-janusgraph-hostname-thoth-middleend.172.17.0.1.nip.io"
++const HOST = "thoth-janusgraph-hostname-thoth-middleend.ose.sbu.lab.eng.bos.redhat.com"
++const PORT = "80"
+ 
+ // for implementations like Neptune where only single commands are allowed per request
+ // set to true
+@@ -9,8 +12,8 @@ const SINGLE_COMMANDS_AND_NO_VARS = false;
+ 
+ 
+ // The communication protocol with the server can be "REST" or "websocket"
+-const COMMUNICATION_PROTOCOL = "REST";
+-//const COMMUNICATION_PROTOCOL = "websocket";
++//const COMMUNICATION_PROTOCOL = "REST";
++const COMMUNICATION_PROTOCOL = "websocket";
+ // TODO: configuration for the secure server
+ 
+ // The communication method can be GraphSON 1.0 (used by Gremlin 3.2)
